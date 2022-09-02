@@ -25,9 +25,30 @@ make -j4
 ./ch1
 ```
 
+指令解釋：
+- git clone {url} : 利用git複製gitlab/github專案
+- cmake: 找到CMakeLists.txt，設置專案，產生出Makefile
+- make: 根據Makefile編譯並產生出可以被電腦執行的二進制執行檔, -j4代表使用4個執行序在做編譯這件事情
+
+ch1的程式我暫時不會說在做什麼\
+程式照著上面執行 能夠跑出灰色模糊的人臉就好\
+ch2開始我才會開始講程式碼\
+
+課後練習：\
 上面做完應該會出現灰色的迪亞波羅\
 要怎麼召喚貓咪拯救世界呢？\
 提示：
 環境變數或是更改讀取路徑
 
 ## 第二章 Opencv基本操作
+
+- 讀檔（彩色，灰色）imread
+- 模糊 blur
+- Canny濾波 canny
+- 縮放 resize
+- hsv二值化
+
+課後練習：\
+上網搜尋opencv的api\
+嘗試使用GaussianBlur,以hsv濾色後，使用morphology和findcontours找出紅色的物體\
+並知道上述這些函式的意義。
