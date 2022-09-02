@@ -24,7 +24,7 @@ ssh-keygen
 然後：
 
 ```
-cat ~/.ssh/rsa.pub
+cat ~/.ssh/id_rsa.pub
 ```
 以顯示公鑰 要從ssh-rsa開始複製起 \
 將下方出來的公鑰複製到gitlab -> 右上頭貼 ->左方SSH Keys -> Key大格子裡面 \
