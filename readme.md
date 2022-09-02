@@ -12,7 +12,7 @@ Kmeans和c++的教學
 複製專案到你想要的位置並進到專案裡面：
 
 ```
-git clone {the project}
+git clone git@gitlab.ical.tw:a1085125/basic_tutorial.git
 cd basic_tutorial
 ```
 開始編譯：
