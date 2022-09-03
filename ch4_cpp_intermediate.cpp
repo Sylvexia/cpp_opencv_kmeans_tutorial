@@ -1,4 +1,3 @@
-#include <opencv4/opencv2/opencv.hpp>
 #include <iostream>
 #include <vector>
 #include <stdlib.h>
@@ -95,7 +94,7 @@ int main()
     // section 3:
 
     // PixelClass pix_class = {12, 23, 12}; // the class default is private
-    
+
     PixelClass pix_class;
     pix_class.set_rgb(34, 23, 12);
     cout << "======================= class: ======================="
