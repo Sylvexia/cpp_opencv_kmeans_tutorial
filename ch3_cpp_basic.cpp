@@ -1,35 +1,54 @@
 #include <iostream>
 
-int main(int argc, char **argv)
+int main()
 {
-    // section 1: print string using c++
-    std::cout << "Wellcome to c++ HELL" << std::endl;
+    // section 1: input and print using c++ cin and cout
 
-    // section 2:
+    std::cout << "Wellcome to c++ HELL!!\nInput your unlucky number:";
+    int num = 0;
+    std::cin >> num;
+    std::cout << "Your unlucky number is: " << num << "\n";
+
+    std::cout << std::endl;
+
+    // section 2: string
+
     std::string meow_str = "meow";
 
-    std::cout << "meow_str: " << meow_str << std::endl;
+    std::cout << "meow_str: " << meow_str << "\n";
 
+    // to upper case
     for (int i = 0; i < meow_str.size(); i++)
     {
-        meow_str[i] = meow_str[i] - 'a' + 'A';
+        meow_str[i] = meow_str[i] - 'a' + 'A'; // ascii code!
     }
 
-    std::cout << meow_str << std::endl;
+    std::cout << "upper case string: " << meow_str << "\n";
 
-    // section 3:
+    // section 3 and section 4 is c not c++ 
 
-    int arr[3][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+    // section 3: 1d array
+
+    int arr[9] = {0}; // all 0
+
+    for (int i = 0; i < 9; i++)
+    {
+        std::cout << arr[i] << " ";
+    }
+    std::cout << "\n";
+
+    // section 4: 2d array
+
+    int arr2d[3][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
 
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 4; j++)
         {
-            std::cout << arr[i][j] << " ";
+            std::cout << arr2d[i][j] << " ";
         }
-        std::cout << std::endl;
+        std::cout << "\n";
     }
 
-    
     return 0;
 }

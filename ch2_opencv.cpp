@@ -6,7 +6,7 @@ int main(int argc, char **argv)
     cv::Mat image = cv::imread("../pic/rainbow.jpg", cv::IMREAD_COLOR);
     cv::Mat image_grey = cv::imread("../pic/rainbow.jpg", cv::IMREAD_GRAYSCALE);
 
-    if(image.empty())
+    if (image.empty())
     {
         std::cout << "Dude! I cannot find the file, the program dies!"
                   << "\n";
@@ -17,6 +17,7 @@ int main(int argc, char **argv)
     cv::waitKey(0); // stop
     cv::imshow("image_grey", image_grey);
     cv::waitKey(0);
+    cv::destroyAllWindows();
 
     cv::Mat blur, canny, smaller, bigger, specific_size;
 
@@ -33,9 +34,10 @@ int main(int argc, char **argv)
     cv::imshow("specific_size", specific_size);
 
     cv::waitKey(0);
+    cv::destroyAllWindows();
 
     cv::Mat blue_mask, green_mask, red_mask, hsv;
-    
+
     cv::cvtColor(image, hsv, cv::COLOR_BGR2HSV);
     cv::inRange(hsv, cv::Scalar{100, 100, 100}, cv::Scalar{140, 255, 255}, blue_mask);
     cv::inRange(hsv, cv::Scalar{35, 43, 46}, cv::Scalar{77, 255, 255}, green_mask);
@@ -46,6 +48,7 @@ int main(int argc, char **argv)
     cv::imshow("red_mask", red_mask);
 
     cv::waitKey(0);
+    cv::destroyAllWindows();
 
     return 0;
 }
