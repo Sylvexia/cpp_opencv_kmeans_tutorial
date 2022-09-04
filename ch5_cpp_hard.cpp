@@ -42,6 +42,8 @@ void swap_by_reference(int &a, int &b) // recommentded
 int main()
 {
     int x = 0;
+    int *x_address = &x;
+    int &x_reference = x;
 
     // pass_by_value(x);
     // pass_by_pointer(&x);

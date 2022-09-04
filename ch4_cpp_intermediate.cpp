@@ -48,7 +48,7 @@ int main()
 
     // section 1:
 
-    vector<int> vec; // I can now not using std::vector!!
+    vector<int> vec; // I can now not using std::{asdfasdfasf}!!
 
     // You can now not specify the size when declare a vector
 
@@ -108,5 +108,5 @@ int main()
          << "\n";
     cout << "R: " << pix_class.get_r() << ", G: " << pix_class.get_g() << ", B: " << pix_class.get_b() << "\n";
 
-    // why we need get and set?? (Encapusulation)
+    // why we need get and set?? (Encapusulation 封裝)
 }

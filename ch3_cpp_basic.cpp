@@ -18,17 +18,31 @@ int main()
 
     // string is char[] with additional function on top of it
 
-    std::string meow_str = "meow";
+    std::string lowercase_str = "meow";
 
-    std::cout << "meow_str: " << meow_str << "\n";
+    std::cout << "meow_str: " << lowercase_str << "\n";
 
     // to upper case
-    for (int i = 0; i < meow_str.size(); i++)
+    for (int i = 0; i < lowercase_str.size(); i++)
     {
-        meow_str[i] = meow_str[i] - ('a' - 'A'); // ascii code!
+        lowercase_str[i] = lowercase_str[i] - ('a' - 'A'); // ascii code!
     }
 
-    std::cout << "upper case string: " << meow_str << "\n";
+    std::cout << "upper case string: " << lowercase_str << "\n";
+
+    std::string str = "Do weebs in ICAL has boyfriend/girlfriend?";
+    std::string str2("girlfriend");
+
+    int found = str.find(str2);
+
+    if (found == std::string::npos) //if not fond
+    {
+        std::cout << "String not found!\n"
+                  << "The program now dies!!!\n";
+
+        exit(-1);
+    }
+    std::cout << "found at " << found << "\n";
 
     // section 3 and section 4 is c not c++
 

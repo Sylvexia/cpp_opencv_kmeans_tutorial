@@ -3,7 +3,7 @@
 
 int main(int argc, char **argv)
 {
-    cv::Mat image = cv::imread("../pic/rainbow.jpg", cv::IMREAD_COLOR);
+    cv::Mat image = cv::imread("../pic/rainbow.jpg", cv::IMREAD_COLOR); //路徑是和執行檔的位置綁定！！
     cv::Mat image_grey = cv::imread("../pic/rainbow.jpg", cv::IMREAD_GRAYSCALE);
 
     if (image.empty())

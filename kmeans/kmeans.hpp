@@ -19,7 +19,7 @@ std::vector<std::vector<float>> generate_random_k_centers(int k_num, int dim, in
 
 Kmeans_algo Kmeans_algorithm(std::vector<std::vector<float>> data_vec, int k_num, int dim);
 
-std::vector<std::vector<float>> replace_label_to_center(std::vector<std::vector<float>> data_vec, std::vector<int> labels_vec, std::vector<std::vector<float>> centers_vec);
+std::vector<std::vector<float>> replace_with_label_and_center(std::vector<std::vector<float>> data_vec, std::vector<int> labels_vec, std::vector<std::vector<float>> centers_vec);
 
 std::vector<std::vector<float>> mat_to_vec(cv::Mat img);
 
