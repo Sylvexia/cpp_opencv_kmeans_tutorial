@@ -8,6 +8,11 @@ struct PixelStruct
     int r;
     int g;
     int b;
+
+    int get_total()
+    {
+        return r + g + b;
+    }
 };
 
 class PixelClass
@@ -49,7 +54,7 @@ int main()
 
     for (int i = 0; i < 10; i++)
     {
-        vec.push_back(i * 2); //you cannot push back in array!
+        vec.push_back(i * 2); // you cannot push back in array!
     }
 
     cout << "pushed back: \n";
@@ -73,6 +78,8 @@ int main()
     cout << "======================= struct: ======================="
          << "\n";
     cout << pix.r << " " << pix.g << " " << pix.b << "\n";
+
+    cout << "total of r+g+b: " << pix.get_total() << "\n";
 
     vector<PixelStruct> pixels;
 

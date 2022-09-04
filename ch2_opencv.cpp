@@ -14,7 +14,7 @@ int main(int argc, char **argv)
     }
 
     cv::imshow("image", image);
-    cv::waitKey(0); // stop
+    cv::waitKey(0); // 程式執行到這裡暫停直到按鍵
     cv::imshow("image_grey", image_grey);
     cv::waitKey(0);
     cv::destroyAllWindows();
@@ -23,8 +23,8 @@ int main(int argc, char **argv)
 
     cv::blur(image, blur, {15, 15});
     cv::Canny(image, canny, 3, 50);
-    cv::resize(image, smaller, {image.rows / 2, image.cols / 3});
-    cv::resize(image, bigger, {image.rows * 2, image.cols * 2});
+    cv::resize(image, smaller, {image.cols / 2, image.rows / 3});
+    cv::resize(image, bigger, {image.cols * 2, image.rows * 2});
     cv::resize(image, specific_size, {100, 100});
 
     cv::imshow("blur", blur);

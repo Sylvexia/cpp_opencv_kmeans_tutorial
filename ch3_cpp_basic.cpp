@@ -1,9 +1,12 @@
 #include <iostream>
 
+// The slight difference between c an c++
+
 int main()
 {
-    // section 1: input and print using c++ cin and cout
+    // section 1: input and output using c++ cin and cout
 
+    // in c, input and output is scanf and printf
     std::cout << "Wellcome to c++ HELL!!\nInput your unlucky number:";
     int num = 0;
     std::cin >> num;
@@ -13,6 +16,8 @@ int main()
 
     // section 2: string
 
+    // string is char[] with additional function on top of it
+
     std::string meow_str = "meow";
 
     std::cout << "meow_str: " << meow_str << "\n";
@@ -20,12 +25,12 @@ int main()
     // to upper case
     for (int i = 0; i < meow_str.size(); i++)
     {
-        meow_str[i] = meow_str[i] - 'a' + 'A'; // ascii code!
+        meow_str[i] = meow_str[i] - ('a' - 'A'); // ascii code!
     }
 
     std::cout << "upper case string: " << meow_str << "\n";
 
-    // section 3 and section 4 is c not c++ 
+    // section 3 and section 4 is c not c++
 
     // section 3: 1d array
 

@@ -1,7 +1,24 @@
 #include <iostream>
 #include <vector>
 
-void swap_by_value(int a, int b) // this does not work
+// This chapter basically says why the meowing god on Earth my variable changes when passing through function
+
+void pass_by_value(int x)
+{
+    x += 1;
+}
+
+void pass_by_pointer(int *x)
+{
+    (*x) += 1;
+}
+
+void pass_by_reference(int &x)
+{
+    x += 1;
+}
+
+void swap_by_value(int a, int b) // this does not do swap
 {
     int temp = a;
     a = b;
@@ -24,11 +41,19 @@ void swap_by_reference(int &a, int &b) // recommentded
 
 int main()
 {
-    int a = 3, b = 5;
+    int x = 0;
+
+    // pass_by_value(x);
+    // pass_by_pointer(&x);
+    pass_by_reference(x);
+
+    std::cout << "value of x: " << x << "\n";
+
+    // int a = 3, b = 5;
 
     // swap_by_value(a, b);
     // swap_by_pointer(&a, &b);
-    swap_by_reference(a, b);
+    // swap_by_reference(a, b);
 
-    std::cout << "a: " << a << "b: " << b << "\n";
+    // std::cout << "a: " << a << "b: " << b << "\n";
 }
