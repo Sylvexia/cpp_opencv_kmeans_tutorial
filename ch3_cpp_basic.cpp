@@ -35,7 +35,7 @@ int main()
 
     int found = str.find(str2);
 
-    if (found == std::string::npos) //if not fond
+    if (found == std::string::npos) // if not fond
     {
         std::cout << "String not found!\n"
                   << "The program now dies!!!\n";
@@ -58,7 +58,7 @@ int main()
 
     // section 4: 2d array
 
-    int arr2d[3][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+    int arr2d[3][4] = {{0, 1, 2, 3}, {4, 5, 6, 7}, {8, 9, 10, 11}};
 
     for (int i = 0; i < 3; i++)
     {

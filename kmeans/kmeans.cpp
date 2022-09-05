@@ -140,6 +140,7 @@ Kmeans_algo Kmeans_algorithm(std::vector<std::vector<float>> data_vec, int k_num
         }// 目標: 得到centers_vec[第k群]的重心值
     }
 
+    // 要怎麼回傳多個參數？
     Kmeans_algo ret;
     ret.centers = centers_vec;
     ret.labels = labels_vec;
