@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 
     cv::Mat blur, canny, smaller, bigger, specific_size;
 
-    cv::blur(image, blur, {15, 15});
+    cv::blur(image, blur, {31, 31});
     cv::Canny(image, canny, 3, 50);
     cv::resize(image, smaller, {image.cols / 2, image.rows / 3});
     cv::resize(image, bigger, {image.cols * 2, image.rows * 2});

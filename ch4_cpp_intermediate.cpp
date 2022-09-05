@@ -63,10 +63,12 @@ int main()
         cout << vec[i] << " ";
     }
 
+    cout << "vec_size" << vec.size() << "\n";
+
     // Ranged-baed loop (if you care about the index don't use it)
-    // for (int num : vec)
-    //{
-    //     cout << num << " ";
+    // for (int a : vec)
+    // {
+    //     cout << a << " ";
     // }
 
     cout << "\n";

@@ -51,11 +51,11 @@ int main()
 
     std::cout << "value of x: " << x << "\n";
 
-    // int a = 3, b = 5;
+    int a = 3, b = 5;
 
     // swap_by_value(a, b);
     // swap_by_pointer(&a, &b);
-    // swap_by_reference(a, b);
+    swap_by_reference(a, b);
 
-    // std::cout << "a: " << a << "b: " << b << "\n";
+    std::cout << "a: " << a << "b: " << b << "\n";
 }

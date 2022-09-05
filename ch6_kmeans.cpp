@@ -4,7 +4,7 @@ int main()
 {
     srand(0);
 
-    cv::Mat img = cv::imread("../pic/rainbow.jpg", cv::IMREAD_COLOR);
+    cv::Mat img = cv::imread("../pic/meow.png", cv::IMREAD_COLOR); // try cv::IMREAD_UNCHANGED, cv::IMREAD_GRAYSCALE
 
     std::vector<std::vector<float>> data_vec = mat_to_vec(img);
 

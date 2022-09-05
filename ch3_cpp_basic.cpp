@@ -1,5 +1,4 @@
 #include <iostream>
-
 // The slight difference between c an c++
 
 int main()
@@ -20,7 +19,7 @@ int main()
 
     std::string lowercase_str = "meow";
 
-    std::cout << "meow_str: " << lowercase_str << "\n";
+    std::cout << "upper_str: " << lowercase_str << "\n";
 
     // to upper case
     for (int i = 0; i < lowercase_str.size(); i++)

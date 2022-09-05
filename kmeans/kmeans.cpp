@@ -121,7 +121,7 @@ Kmeans_algo Kmeans_algorithm(std::vector<std::vector<float>> data_vec, int k_num
             }
 
             labels_vec[i] = min_index; // 第i筆資料的label屬於第min_index(k)個中心點
-        }// 目標: 得到標記labels_vec[第i筆資料]->k群
+        }                              // 目標: 得到標記labels_vec[第i筆資料]->k群
 
         // 2. 利用先前的標記，將同個標記的資料取重心，以更新k個中心
         for (int j = 0; j < dim; j++)
@@ -130,14 +130,14 @@ Kmeans_algo Kmeans_algorithm(std::vector<std::vector<float>> data_vec, int k_num
 
             for (int i = 0; i < data_vec.size(); i++)
             {
-                int k = labels_vec[i]; // 第i筆資料屬於k群
+                int k = labels_vec[i];               // 第i筆資料屬於k群
                 sum_2d[k].push_back(data_vec[i][j]); // 收集第k群在第j維的所有值
             }
 
             for (int k = 0; k < k_num; ++k)
                 centers_vec[k][j] = vec_mean(sum_2d[k]); // 計算每個群的平均
 
-        }// 目標: 得到centers_vec[第k群]的重心值
+        } // 目標: 得到centers_vec[第k群]的重心值
     }
 
     // 要怎麼回傳多個參數？
